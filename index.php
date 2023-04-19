@@ -21,8 +21,18 @@
 	//echo json_encode($search);
 
 	//Carrega usuario usando login e senha
-	$usuario = new Usuario();
-	$usuario->login("root", "!@$%#");
-	echo $usuario;
+	//$usuario = new Usuario();
+	//$usuario->login("root", "!@$%#");
+	//echo $usuario;
 
+	/* CRIANDO UM NOVO USUARIO
+	$aluno = new Usuario("aluno", "@alun!");
+	$aluno->insert();
+	echo $aluno;
+	*/
+
+	$usuario = new Usuario();
+	$usuario->loadById(8);
+	$usuario->update("professor","senh@");
+	echo $usuario;
  ?>
