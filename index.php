@@ -31,8 +31,16 @@
 	echo $aluno;
 	*/
 
+	/* ALTERANDO UM REGISTRO
 	$usuario = new Usuario();
 	$usuario->loadById(8);
 	$usuario->update("professor","senh@");
 	echo $usuario;
+	*/
+
+	$usuario = new Usuario();
+	$usuario->loadById(7);
+	$usuario->delete();
+	echo $usuario;
+
  ?>
